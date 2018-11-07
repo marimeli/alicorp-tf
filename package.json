@@ -1,0 +1,22 @@
+{
+  "name": "alicorp-tf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aybaneze/alicorp-tf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aybaneze/alicorp-tf/issues"
+  },
+  "homepage": "https://github.com/aybaneze/alicorp-tf#readme",
+  "dependencies": {
+    "gitignore": "^0.6.0"
+  }
+}
