@@ -49,18 +49,22 @@
                 <i class="fa fa-key"></i>
                 <p id="error-password" class="err"></p>
                 <div class="row">
-                    <button id="login-btn" class="col s12 btn btn-large waves-effect fw-700 fsi" type="button">Iniciar sesión</button>
+                  <button id="login-btn" class="col s12 btn btn-large waves-effect fw-700 fsi" type="button">Iniciar
+                    sesión</button>
+                </div>
+                <div class="col-xl-3 text-center">
+                    <button id="logout" class="col s12 btn btn-large waves-effect fw-700 hide" type="button">Cerrar Sesión</button>
                   </div>
               </form>
               <div class="recover fs-13 mt-3">
-                 <!--  <span class="d-block fw-700">
+                <!--  <span class="d-block fw-700">
                     <a href="" class="text-center fw-700">Olvidé mi
                       contraseña</a>
                   </span> -->
-                  <span class="link">
-                    ¿No tienes una cuenta? <a href="#register" id="register-btn" class="text-center fw-700 btn-login-register">Regístrate</a>
-                  </span>           
-                </div>
+                <span class="link">
+                  ¿No tienes una cuenta? <a href="#sign-in" id="register-btn" class="text-center fw-700 btn-login-register">Regístrate</a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -71,7 +75,7 @@
     <section id="sign-in" class="section">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-xl-12 text-center">
             <h5 class="text center fs-38 fw-900">Registrarse</h5>
           </div>
           <div class="container center-align">
@@ -79,7 +83,7 @@
               <form class="login s12">
                 <input id="code-register" class="validate" name="code" type="text" placeholder="Código trabajador">
                 <input id="name-register" class="validate" name="username" type="text" placeholder="Nombre y apellido">
-                <input id="dni-register" class="validate" name="dni" type="text" placeholder="DNI" >
+                <input id="dni-register" class="validate" name="dni" type="text" placeholder="DNI">
                 <input id="email-register" class="validate" name="email" type="email" placeholder="yourmail@example.com">
                 <i class="fa fa-user"></i>
                 <p id="advice-emailRegister" class="err"></p>
@@ -91,29 +95,6 @@
               </form>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CARDS -->
-    <section id="products-cards" class="section">
-      <div class="container">
-        <h2>Perfil de usuario</h2>
-        <table class="table table-hover">
-          <thead>
-            <tr>
-              <th>Nombre y apellido</th>
-              <th>DNI</th>
-              <th>Anfitrión</th>
-              <th>Mensaje</th>
-              <th>Fecha</th>
-            </tr>
-          </thead>
-          <tbody id="table-content">
-          </tbody>
-        </table>
-        <div class="col-xl-3 text-center">
-          <input id="logout" class="btn btn-start-login" type="button" value="Cerrar Sesión">
         </div>
       </div>
     </section>
