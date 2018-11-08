@@ -1,13 +1,17 @@
-//*********REGISTER***********
+
+
 
 //Función que sirve para monitorizar el estado de autentificación
 window.onload = () => {
   //Listener en tiempo real 
-  firebase.auth().onAuthStateChanged((user) => {
+  auth.onAuthStateChanged((user) => {
     if (user) {
-      window.location.href="../index.html"
+      window.location.href = "./index.html"
+      console.log('Usuario logueado');
+   /*    logoutButton.classList.remove('hide'); */
     } else {
       console.log('Usuario NO logueado');
+   /*    logoutButton.classList.add('hide'); */
     }
   });
 };
@@ -16,13 +20,13 @@ window.onload = () => {
 
 //  Función para guardar datos de usuario en Firebase 
 window.wrtiteDataFirebase = () => {
-  const codeId = codeRegister.value; 
+  const codeId = codeRegister.value;
   const fullName = nameRegister.value;
   const id = dniRegister.value;
-  const mail= emailRegister.value;
+  const mail = emailRegister.value;
   /* const pass = passwordRegister.value; */
-/*   event.preventDefault(); */
-  if (codeId !== '' && fullName !== '' && id !== ''  && mail !== '') {
+  /*   event.preventDefault(); */
+  if (codeId !== '' && fullName !== '' && id !== '' && mail !== '') {
     if (/^[a-zA-Z0-9._-]+@+[a-z]+.+[a-z]/.test(mail)) {
       const dataUser = firebase.database().ref().child('users');
       dataUser.push({
@@ -30,9 +34,9 @@ window.wrtiteDataFirebase = () => {
         fullName,
         id,
         mail,
-       /*  pass, */
+        /*  pass, */
       });
-    
+
       let ref = firebase.database().ref('/users');
       ref.once('value', (data) => {
         data.forEach(user => {
@@ -59,23 +63,11 @@ window.wrtiteDataFirebase = () => {
 };
 
 window.loginWithFirebase = () => {
-window.location.href="../index.html"
+ /*  auth.signInWithEmailAndPassword(email, password); */
+  window.location.href = "./index.html"
 };
 
-//---------------- PRODUCTS-------------------------------
-const printProducts = () => {
-    firebase.database().ref().child('products')
-    .on('value', data => {
-        let content = '';
-        data.forEach(e => {
-            const visit = e.val();
-            content += "<tr></td><td>" + visit.name + "</td><td>" + visit.id + "</td><td>" + visit.guest + "</td><td>" + visit.message + "</td><td>" + visit.date + "</td></tr>";
-        });
-        tableContent.innerHTML = content;
-    });
+window.logoutWithFirebase = () => {
+  auth.signOut().then(() => window.location = '../views/login.html');
 };
 
-const cleanTextarea = () => {
-    mail.value = '';
-    password.value = '';
-};
