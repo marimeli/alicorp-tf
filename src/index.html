@@ -19,7 +19,9 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/1280px-Alicorp.svg.png" class="logo">
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><i class="material-icons right black-text">search<input type="text"></i></li>
+        <li><i class="material-icons right black-text">search
+          <input id="searcher" type="text" placeholder="Buscar">
+        </i></li>
         <li><button class="material-icons black-text">shopping_cart</button></li>
         <li>
           <h3 class="black-text">s/ 200</h3>
@@ -35,6 +37,7 @@
       </ul>
     </div>
   </nav>
+
   <ul class="sidenav" id="mobile-demo">
     <li class="tab"><button class="active btn"> Favoritos </button></li>
     <li class="tab"><button class="active btn"> Mi Perfil </button></li>
@@ -42,6 +45,7 @@
     <li class="tab"><button class="active btn"> Ofertas </a></li>
     <li><button class="material-icons black-text">shopping_cart</button></li>
   </ul>
+
   <section>
     <h1>como estas</h1>
   </section>
@@ -226,6 +230,87 @@
 
   <section>
     <h1>chau</h1>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  
+  <div class="column cars">
+    <div class="content">
+      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+         <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+    
   </section>
   <section>
     <div class="carousel carousel-slider center" style="height: 50%;">
