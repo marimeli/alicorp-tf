@@ -5,7 +5,7 @@ window.onload = () => {
   //Listener en tiempo real 
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      console.log('Usuario logueado');
+      window.location.href="../index.html"
     } else {
       console.log('Usuario NO logueado');
     }
@@ -59,7 +59,7 @@ window.wrtiteDataFirebase = () => {
 };
 
 window.loginWithFirebase = () => {
-alert('logueado')
+window.location.href="../index.html"
 };
 
 //---------------- PRODUCTS-------------------------------
