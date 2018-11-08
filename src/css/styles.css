@@ -153,6 +153,28 @@ h1 {
   
 }
 
+.card-image {
+    padding: 30px;
+}
+
+.card-action input#cant {
+    width: 20% !important;
+}
+
+.details {
+    margin: 0px 50px 0px 20px;
+}
+
+.description {
+    padding-top: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+.details .operation input#cantModal {
+    width: 20% !important;
+}
+
 /* Style the buttons */
 
 

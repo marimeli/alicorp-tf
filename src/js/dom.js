@@ -1,4 +1,4 @@
-const auth = firebase.auth();
+// const auth = firebase.auth();
 
 //Login inputs
 
