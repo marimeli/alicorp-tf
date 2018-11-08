@@ -125,10 +125,10 @@ window.printProducts = () => {
         const itemProducts = listCategorias[id][elem];
         showProducts.innerHTML += `
       <div class="row" id=${id}>
-      <div class="col s12 l4">
+      <div class="col s12 l12">
       <div class="card">
         <div class="card-image">
-          <img src="${itemProducts.imagen}">
+          <img src="${itemProducts.imagen}" class="image" style="width:50, heigth:10">
         </div>
         <div class="card-content">
           <a class="modal-trigger" href="#modal1">
