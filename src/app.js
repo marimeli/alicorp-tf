@@ -27,19 +27,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const btn = document.getElementsByTagName('button');
 const section = document.getElementsByTagName('section');
-console.log(section)
     for( let i = 0; i < btn.length; i++){
         btn[i].addEventListener('click', () => {
             for ( let x = 0; x < section.length; x++){
-                    if(i === x){
-                        section[x].style.display='block'
-                        btn[i].disabled;
+                    if(i === x ){
+                        section[x].style.display='block'     
+                    }else if(i > x){
+                        let z = i - 5;
+                        if(z == x){ console.log(x)
+                             section[x].style.display='block'
+                            }
+                            else{
+                                section[x].style.display='none'
+                            }
                     }else{
                         section[x].style.display='none'
-              }     
+                    }
+                    }
+                        
+              }
+        )     
             }
-          })
-}
+          
+
 
   
 

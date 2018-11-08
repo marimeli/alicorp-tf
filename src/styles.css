@@ -9,21 +9,40 @@ body {
     background: #ffffff;
     margin: 0;
     padding: 0;
-   
-
 }      
 
-footer{
-    bottom: 0;
+.carousel img{
+min-height: 80vh;
 }
 
+.prof{
+ width: 68%;
+ border-radius: 90%;
+ text-align: center;
+ margin: 20px 15% 20px;
+}
 
+.profile{
+ background: #6e6e6e;
+ height: 100vh;
+}
 
 .logo{
     width: 17%;
     height: 60%;
     margin: 10px;
 }
+
+.slid{
+    overflow: scroll;
+    height: 100vh;
+}
+
+.cardImg{
+    height: 170px;
+
+}
+
 
 section{
     height: 200px;
