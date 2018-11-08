@@ -139,6 +139,11 @@ h1 {
   display: block;
 }
 
+#myBtnContainer{
+  margin: 10px 0 10px 0;
+  
+}
+
 /* Style the buttons */
 
 
