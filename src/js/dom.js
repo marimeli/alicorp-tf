@@ -1,8 +1,9 @@
 const auth = firebase.auth();
 
 //Login inputs
-const mail = document.getElementById('email');
+
 const password = document.getElementById('password');
+const dni = document.getElementById('dni');
 
 //Register inputs
 const emailRegister = document.getElementById('email-register');
@@ -37,6 +38,5 @@ const showRegister = () => {
 /* DOM EVENTS */
 signinButton.addEventListener('click', wrtiteDataFirebase);
 loginButton.addEventListener('click', loginWithFirebase);
-logoutButton.addEventListener('click', logoutWithFirebase);
 backButton.addEventListener('click', showLogin);
 registerButton.addEventListener('click', showRegister);

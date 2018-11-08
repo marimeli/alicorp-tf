@@ -34,6 +34,7 @@
         <li class="tab"><button class="active btn"> Favoritos</button></li>
         <li class="tab"><button class="active btn"> Ofertas</button></li>
         <li class="tab"><button class="active btn"> Categorias</a></li>
+        <a href="./views/login.html" class="col s12 btn btn-large waves-effect fw-700">Cerrar Sesión</a>
       </ul>
     </div>
   </nav>
@@ -44,12 +45,13 @@
     <li class="tab"><button class="active btn"> Categorias </button></li>
     <li class="tab"><button class="active btn"> Ofertas </a></li>
     <li><button class="material-icons black-text">shopping_cart</button></li>
+    <a href="./views/login.html" class="col s12 btn btn-large waves-effect fw-700" type="button">Cerrar Sesión</a>
   </ul>
 
-  <section>
+  <section class="hiden">
     <h1>como estas</h1>
   </section>
-  <section>
+  <section class="hiden">
     <div class="container">
       <div class="row">
         <div class="col l4 m5 s12 profile center-align">
@@ -228,89 +230,8 @@
     </div>
   </section>
 
-  <section>
+  <section class="hiden">
     <h1>chau</h1>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  
-  <div class="column cars">
-    <div class="content">
-      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Classic</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
-  <div class="column people">
-    <div class="content">
-      <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Girl</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-    <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Man</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column people">
-    <div class="content">
-         <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
-      <h4>Woman</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-    
   </section>
   <section>
     <div class="carousel carousel-slider center" style="height: 50%;">
@@ -324,13 +245,96 @@
         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2a29fd36488867.571e8645e57a1.png">
       </div>
     </div>
+    <div id="myBtnContainer" class="center-align">
+        <a class="btn active" onclick="filterSelection('all')"> Semola</a>
+        <a class="btn" onclick="filterSelection('nature')"> Avenas</a>
+        <a class="btn" onclick="filterSelection('cars')"> Conservas</a>
+        <a class="btn" onclick="filterSelection('people')"> Salsas</a>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        
+        <div class="column cars">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      
+        <div class="column people">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+               <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END MAIN -->
+      </div>
   </section>
-  <section>
+  <section class="hiden">
     <h1>carrito</h1>
   </section>
+
   <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./js/app.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/dom.js"></script>
+  
 </body>
 
 </html>

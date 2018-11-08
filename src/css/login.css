@@ -76,3 +76,6 @@ font-size: 38px;
 .err {
   color: red;
 }
+#sign-in{
+  display:none;
+}

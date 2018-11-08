@@ -1,20 +1,17 @@
-
-
-
 //Función que sirve para monitorizar el estado de autentificación
-window.onload = () => {
-  //Listener en tiempo real 
-  auth.onAuthStateChanged((user) => {
-    if (user) {
-      window.location.href = "./index.html"
-      console.log('Usuario logueado');
-   /*    logoutButton.classList.remove('hide'); */
-    } else {
-      console.log('Usuario NO logueado');
-   /*    logoutButton.classList.add('hide'); */
-    }
-  });
-};
+// window.onload = () => {
+//   //Listener en tiempo real 
+//   auth.onAuthStateChanged((user) => {
+//     if (user) {
+//       window.location.href = "./index.html"
+//       console.log('Usuario logueado');
+//    /*    logoutButton.classList.remove('hide'); */
+//     } else {
+//       console.log('Usuario NO logueado');
+//    /*    logoutButton.classList.add('hide'); */
+//     }
+//   });
+// };
 
 //********REGISTER***********
 
@@ -63,11 +60,16 @@ window.wrtiteDataFirebase = () => {
 };
 
 window.loginWithFirebase = () => {
- /*  auth.signInWithEmailAndPassword(email, password); */
-  window.location.href = "./index.html"
+  // if (password.value !== '' && dni.value !== ''  ) {
+  //   alert('iniciaste sesión');
+  window.location.href = "../index.html"
+  // }else{
+  //   alert('complete todos los campos vacios');
+  // }
 };
 
 window.logoutWithFirebase = () => {
-  auth.signOut().then(() => window.location = '../views/login.html');
+  alert("hola")
+  window.location.href = 'views/login.html';
 };
 
