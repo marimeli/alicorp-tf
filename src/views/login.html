@@ -11,6 +11,7 @@
   <!-- CSS Optional -->
   <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body>
   <main>
     <!--HEADER-->
@@ -20,8 +21,8 @@
           <div class="nav-wrapper">
             <div class="container">
               <a href="#" class="brand-logo">
-                <span class="valign-wrapper"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/400px-Alicorp.svg.png" class="logo"
-                    alt="logo">
+                <span class="valign-wrapper"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/400px-Alicorp.svg.png"
+                    class="logo" alt="logo">
                   <span class="pl fw-900 fs-18">ALICORP</span></span>
               </a>
             </div>
@@ -29,61 +30,106 @@
         </div>
       </nav>
     </header>
-    <!--LOGIN-->
-  <section class="section">
+    <!-- LOGIN -->
+    <section id="login">
       <div class="container">
         <div class="row">
-          <div id="login">
-            <h1 class="text center fs-38 fw-900">Iniciar sesión </h1>
-            <div class="container center-align">
-              <div class="row z-depth-1 grey lighten-4 login-form">
-                <form class="col s12" id="login">
-                  <div class="container section center-align">
-                    <img src="https://image.winudf.com/v2/image/Y29tLmRhdGFzZXJ2aWNpb3MudHRhdWRpdGFsaWNvcnByZWd1bGFyX2ljb25fMTUzNTUyNDAzOV8wNTI/icon.png?w=170&fakeurl=1&type=.png" class="isotipo" alt="logo-form">
+          <h1 class="text center fs-38 fw-900">Iniciar sesión </h1>
+          <div class="container center-align">
+            <div class="row z-depth-1 grey lighten-4 login-form">
+              <form class="login col s12">
+                <div class="container section center-align input-field col s12 pt-4">
+                  <img src="https://image.winudf.com/v2/image/Y29tLmRhdGFzZXJ2aWNpb3MudHRhdWRpdGFsaWNvcnByZWd1bGFyX2ljb25fMTUzNTUyNDAzOV8wNTI/icon.png?w=170&fakeurl=1&type=.png"
+                    class="isotipo" alt="logo-form">
+                </div>
+                <input id="email" name="email" type="email" placeholder="yourmail@example.com" autofocus />
+                <i class="fa fa-user"></i>
+                <p id="error-email" class="err"></p>
+                <input id="password" name="password" type="password" placeholder="Contraseña">
+                <i class="fa fa-key"></i>
+                <p id="error-password" class="err"></p>
+                <div class="row">
+                    <button id="login-btn" class="col s12 btn btn-large waves-effect fw-700 fsi" type="button">Iniciar sesión</button>
                   </div>
-                  <div class="row pb-0">
-                    <div class="input-field col s12 pt-4">
-                      <input id="email-login" class="validate" type="email" name="email-login" />
-                      <label for="email-login">Correo</label>
-                    </div>
-                  </div>
-                  <div class="row pb-0">
-                    <div class="input-field col s12 pt-4">
-                      <input id="password-login" class="validate" type="password" name="password-login" />
-                      <label for="password-login">Contraseña</label>
-                    </div>
-                    <label style="float: right;">
-                      <a class="pink-text" href=""><b>Olvidé mi contraseña</b></a>
-                    </label>
-                  </div>
-                  <div class="row">
-                    <button type="submit" class="col s12 btn btn-large waves-effect fsi">Ingresar</button>
-                  </div>
-                </form>
-              </div>
+              </form>
               <div class="recover fs-13 mt-3">
-                <span class="d-block fw-700">
-                  <a href="" class="text-center fw-700">Olvidé mi
-                    contraseña</a>
-                </span>
-                <span>
-                  ¿No tienes una cuenta? <a href="#register" class="text-center fw-700 btn-login-register">Regístrate</a>
-                </span>
-              </div>
+                 <!--  <span class="d-block fw-700">
+                    <a href="" class="text-center fw-700">Olvidé mi
+                      contraseña</a>
+                  </span> -->
+                  <span class="link">
+                    ¿No tienes una cuenta? <a href="#register" id="register-btn" class="text-center fw-700 btn-login-register">Regístrate</a>
+                  </span>           
+                </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section id="sign-in" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <h5 class="text center fs-38 fw-900">Registrarse</h5>
+          </div>
+          <div class="container center-align">
+            <div class="row z-depth-1 grey lighten-4 login-form">
+              <form class="login s12">
+                <input id="code-register" class="validate" name="code" type="text" placeholder="Código trabajador">
+                <input id="name-register" class="validate" name="username" type="text" placeholder="Nombre y apellido">
+                <input id="dni-register" class="validate" name="dni" type="text" placeholder="DNI" >
+                <input id="email-register" class="validate" name="email" type="email" placeholder="yourmail@example.com">
+                <i class="fa fa-user"></i>
+                <p id="advice-emailRegister" class="err"></p>
+                <input id="password-register" name="password" type="password" placeholder="Contraseña">
+                <i class="fa fa-key"></i>
+                <p id="advice-passwordRegister" class="err"></p>
+                <button id="signin-btn" class="col s12 btn btn-large waves-effect fw-700 fsi" type="button">Registrarse</button>
+                <input id="back" class="fw-700 fsi mt-3 p-0 btn-link pull-left" type="button" value="Atrás">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section id="products-cards" class="section">
+      <div class="container">
+        <h2>Perfil de usuario</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Nombre y apellido</th>
+              <th>DNI</th>
+              <th>Anfitrión</th>
+              <th>Mensaje</th>
+              <th>Fecha</th>
+            </tr>
+          </thead>
+          <tbody id="table-content">
+          </tbody>
+        </table>
+        <div class="col-xl-3 text-center">
+          <input id="logout" class="btn btn-start-login" type="button" value="Cerrar Sesión">
         </div>
       </div>
     </section>
   </main>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
- <!-- Firebase -->
- <!--  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script> -->
-  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <!--  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script> -->
+  <!-- Firebase App-->
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-app.js"></script>
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase-database.js"></script>
+  <!-- Import JS-->
   <script src="../js/firebase.js"></script>
   <script src="../js/login.js"></script>
+  <script src="../js/dom.js"></script>
 </body>
 
 </html>
