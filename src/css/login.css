@@ -73,3 +73,9 @@ font-size: 38px;
   float: left;
 }
 
+.err {
+  color: red;
+}
+#sign-in{
+  display:none;
+}

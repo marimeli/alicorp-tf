@@ -9,26 +9,332 @@
   <title>Alicorp</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-        <nav>
-          <div class="nav-wrapper white">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/1280px-Alicorp.svg.png" class="logo" alt="logoAlicorp">
-             <ul class="right hide-on-med-and-down">
-             <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-             <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
-            </ul>
+
+  <nav class="nav-extended">
+    <div class="nav-wrapper white">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Alicorp.svg/1280px-Alicorp.svg.png" class="logo">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><i class="material-icons right black-text">search
+          <input id="searcher" type="text" placeholder="Buscar">
+        </i></li>
+        <li><button class="material-icons black-text">shopping_cart</button></li>
+        <li>
+          <h3 class="black-text">s/ 200</h3>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-content red accent-4 hide-on-small-and-down">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><button class="active btn"> Mi Perfil</button></li>
+        <li class="tab"><button class="active btn"> Favoritos</button></li>
+        <li class="tab"><button class="active btn"> Ofertas</button></li>
+        <li class="tab"><button class="active btn"> Categorias</a></li>
+        <a href="./views/login.html" class="col s12 btn btn-large waves-effect fw-700">Cerrar Sesión</a>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li class="tab"><button class="active btn"> Favoritos </button></li>
+    <li class="tab"><button class="active btn"> Mi Perfil </button></li>
+    <li class="tab"><button class="active btn"> Categorias </button></li>
+    <li class="tab"><button class="active btn"> Ofertas </a></li>
+    <li><button class="material-icons black-text">shopping_cart</button></li>
+    <a href="./views/login.html" class="col s12 btn btn-large waves-effect fw-700" type="button">Cerrar Sesión</a>
+  </ul>
+
+  <section class="hiden">
+    <h1>como estas</h1>
+  </section>
+  <section class="hiden">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 m5 s12 profile center-align">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1"><img src="../perfil.jpg" class="prof "></a>
+          <table class="white-text">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <td>Geraldine Saco</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Correo</th>
+                <td>gsacor@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Código</th>
+                <td>634528261</td>
+              </tr>
+              <tr>
+                <th>Sede</th>
+                <td>San Isidro</td>
+              </tr>
+              <tr>
+                <th>Puesto</th>
+                <td>Analista de Sistemas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content">
+            <img src="../perfil.jpg" class="prof">
           </div>
-        </nav>
+
+        </div>
 
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <div class="col l7 m5 s12 slid">
+          <div class="col s12 m12 l12">
+            <h2 class="header">Historial</h2>
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="../portada.png" class="cardImg">
+                <div class="card-action">
+                  <a href="#"> Información </a>
+                </div>
+              </div>
+
+              <div class="card-stacked">
+                <div class="card-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <td>Item Price</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Cant.</th>
+                        <td>1 paquete</td>
+                      </tr>
+                      <tr>
+                        <th>total</th>
+                        <td>s/ 3.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <!-- card2 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="../portada.png" class="cardImg">
+                <div class="card-action">
+                  <a href="#">Información</a>
+                </div>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <td>Item Price</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Cant.</th>
+                        <td>1 paquete</td>
+                      </tr>
+                      <tr>
+                        <th>total</th>
+                        <td>s/ 3.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <!-- card3 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="../portada.png" class="cardImg">
+                <div class="card-action">
+                  <a href="#">Información</a>
+                </div>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <td>Item Price</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Cant.</th>
+                        <td>1 paquete</td>
+                      </tr>
+                      <tr>
+                        <th>total</th>
+                        <td>s/ 3.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <!-- card4 -->
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="../portada.png" class="cardImg">
+                <div class="card-action">
+                  <a href="#">Información</a>
+                </div>
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <td>Item Price</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Cant.</th>
+                        <td>1 paquete</td>
+                      </tr>
+                      <tr>
+                        <th>total</th>
+                        <td>s/ 3.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hiden">
+    <h1>chau</h1>
+  </section>
+  <section>
+    <div class="carousel carousel-slider center" style="height: 50%;">
+      <div class="carousel-item white-text" href="#one!">
+        <img src="../portada.png">
+      </div>
+      <div class="carousel-item white-text" href="#three!">
+        <img src="http://3.bp.blogspot.com/-8-_Xa8G3Tw0/V-iLfSA3p5I/AAAAAAAAAA4/cRasQZVQO-AvrsH2joN9Yh0a9Uvf6SBDACK4B/s1600/Screen-Shot-2014-05-22-at-11.51.55-AM%2B%25281%2529.png">
+      </div>
+      <div class="carousel-item white-text" href="#four!">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/2a29fd36488867.571e8645e57a1.png">
+      </div>
+    </div>
+    <div id="myBtnContainer" class="center-align">
+        <a class="btn active" onclick="filterSelection('all')"> Semola</a>
+        <a class="btn" onclick="filterSelection('nature')"> Avenas</a>
+        <a class="btn" onclick="filterSelection('cars')"> Conservas</a>
+        <a class="btn" onclick="filterSelection('people')"> Salsas</a>
+      </div>
+      
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        
+        <div class="column cars">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      
+        <div class="column people">
+          <div class="content">
+            <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+          <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+               <img src="https://placehold.jp/24/cc9999/993333/250x150.png" alt="Car" style="width:100%">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+      
+      <!-- END MAIN -->
+      </div>
+  </section>
+  <section class="hiden">
+    <h1>carrito</h1>
+  </section>
 
   <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
-  <script src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/login.js"></script>
+  <script src="./js/dom.js"></script>
+  
 </body>
 
 </html>
